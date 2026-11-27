@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vakit: Namaz Vakti ve Ezan</title>
+<meta name="description" content="Namaz vakitleri, ezan, kıble, Kur'an ve yakındaki camiler tek uygulamada. Ücretsiz, üyelik yok.">
+<meta property="og:title" content="Vakit: Namaz Vakti ve Ezan">
+<meta property="og:description" content="Namaz vakitleri, ezan, kıble, Kur'an ve yakındaki camiler tek uygulamada. Ücretsiz, üyelik yok.">
+<meta property="og:image" content="https://hazaraksoyy.github.io/vakit/og.jpg">
+<link rel="icon" href="icon.png">
+<script>
+  (function () {
+    var ua = navigator.userAgent || "";
+    var play = "https://play.google.com/store/apps/details?id=com.vakitapp.namaz";
+    var ios = "https://apps.apple.com/tr/app/id6835932568";
+    if (/android/i.test(ua)) location.replace(play);
+    else if (/iphone|ipad|ipod/i.test(ua) || (/Macintosh/.test(ua) && "ontouchend" in document)) location.replace(ios);
+  })();
+</script>
+<style>
+  :root { --bg1: #246850; --bg2: #123a2d; --mint: #beebd6; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #fff;
+    background: linear-gradient(180deg, var(--bg1), var(--bg2)); padding: 24px 16px;
+  }
+  main { max-width: 420px; width: 100%; text-align: center; }
+  img.icon { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 8px 24px rgba(0,0,0,.3); }
+  h1 { font-size: 30px; margin: 18px 0 8px; }
+  p { color: var(--mint); font-size: 17px; line-height: 1.5; margin: 0 0 24px; }
+  a.btn {
+    display: block; padding: 15px 18px; margin: 12px 0; border-radius: 14px; text-decoration: none;
+    font-weight: 700; font-size: 17px; background: #fff; color: #123a2d;
+  }
+  a.btn.alt { background: transparent; color: #fff; border: 2px solid var(--mint); }
+  small { display: block; margin-top: 24px; color: var(--mint); opacity: .8; font-size: 13px; line-height: 1.5; }
+  small a { color: var(--mint); }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="icon.png" alt="Vakit simgesi">
+  <h1>Vakit</h1>
+  <p>Namaz vakitleri, ezan, kıble, Kur'an ve yakındaki camiler tek uygulamada. Ücretsiz, üyelik yok, açılışta reklam yok.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.vakitapp.namaz">Android için indir (Google Play)</a>
+  <a class="btn alt" href="https://apps.apple.com/tr/app/id6835932568">iPhone için indir (App Store)</a>
+  <small>Vakit bağımsız bir geliştiricinin uygulamasıdır; Diyanet veya bir devlet kurumuyla bağlantısı yoktur.<br><a href="/vakit-privacy/">Gizlilik politikası</a></small>
+</main>
+</body>
+</html>
